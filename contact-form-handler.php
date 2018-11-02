@@ -27,7 +27,7 @@ $email_body = "You have received a new message. ".
 "Email: $email_address\n Message \n $message";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$message,$headers);
+mail($to,$email_subject,$message);
 //redirect to the 'thank you' page
 header('Location: https://linya.herokuapp.com/#report');
    
