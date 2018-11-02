@@ -28,6 +28,6 @@ $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$message,$headers);
 //redirect to the 'thank you' page
-header('Location: https://linya.herokuapp.com');
+//header('Location: https://linya.herokuapp.com');
 }
 ?>
