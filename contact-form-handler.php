@@ -19,6 +19,7 @@ $email_address))
 
 if( empty($errors))
 {
+   $echo $message;
 $to = $myemail;
 $email_subject = "Contact form submission: $name";
 $email_body = "You have received a new message. ".
@@ -29,6 +30,6 @@ $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$message,$headers);
 //redirect to the 'thank you' page
 //header('Location: https://linya.herokuapp.com');
-   $echo $message;
+   
 }
 ?>
