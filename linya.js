@@ -27,16 +27,13 @@
   });
     
 
-  //checkbox link checker
-  function toggleLink(checkBox)
-{
-    var link = document.getElementById("agreeLink");
-
-    if (checkBox.checked)
-        link.style.display = "inline";
-    else
-        link.style.display = "none";
-}
+ function linkOpen(){
+   var check= document.getElementById('myCheck');
+   if (check.checked){
+    window.open("https://drive.google.com/uc?authuser=0&id=1RJoxBh49woxefdhQz0Wo_bDypjS1UZzg&export=download");
+   }
+ }
+  
     
   // Collapse Navbar
   var navbarCollapse = function() {
