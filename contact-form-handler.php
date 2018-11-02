@@ -27,9 +27,16 @@ $email_body = "You have received a new message. ".
 "Email: $email_address\n Message \n $message";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$message);
+
+if(mail($to,$email_subject,$message)){
+   $echo "accepted"  
+}
+   else
+   {
+    $echo "error"  
+   }
 //redirect to the 'thank you' page
-header('Location: https://linya.herokuapp.com/#report');
+//header('Location: https://linya.herokuapp.com/#report');
    
 }
 ?>
