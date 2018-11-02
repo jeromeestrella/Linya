@@ -27,6 +27,16 @@
   });
     
 
+  //checkbox link checker
+  function toggleLink(checkBox)
+{
+    var link = document.getElementById("agreeLink");
+
+    if (checkBox.checked)
+        link.style.display = "inline";
+    else
+        link.style.display = "none";
+}
     
   // Collapse Navbar
   var navbarCollapse = function() {
